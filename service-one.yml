@@ -1,1 +1,4 @@
+server:
+  port: 8090
+
 message: hello from service one
