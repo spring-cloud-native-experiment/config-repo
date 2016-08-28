@@ -1,2 +1,13 @@
 server:
   port: 9000
+  contextPath: /uaa
+
+security:
+  oauth2:
+    client:
+      clientId: acme
+      clientSecret: acmesecret
+      authorized-grant-types: authorization_code,refresh_token,password
+      scope: openid
+  user:
+    password: password
