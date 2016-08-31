@@ -22,3 +22,7 @@ security:
       load-balanced: true
       user-info-uri: http://auth-service/uaa/user
       prefer-token-info: false
+
+feign:
+  hystrix:
+    enabled: false
