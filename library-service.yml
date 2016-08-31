@@ -14,11 +14,11 @@ security:
     password: password
   oauth2:
     client:
-      accessTokenUri: http://auth-service/uaa/oauth/token
-      userAuthorizationUri: http://auth-service/uaa/oauth/authorize
-      clientId: acme
-      clientSecret: acmesecret
+      access-token-uri: http://auth-service/uaa/oauth/token
+      user-authorization-uri: http://auth-service/uaa/oauth/authorize
+      client-id: acme
+      client-secret: acmesecret
     resource:
-      loadBalanced: true
-      userInfoUri: http://auth-service/uaa/user
-      preferTokenInfo: false
+      load-balanced: true
+      user-info-uri: http://auth-service/uaa/user
+      prefer-token-info: false

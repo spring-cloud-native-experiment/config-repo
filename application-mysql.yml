@@ -4,7 +4,7 @@ spring:
     username: root
     password: root
     dbcp:
-      validationQuery: SELECT 1
+      validation-query: SELECT 1
       test-while-idle: true
   jpa:
     show-sql: true
