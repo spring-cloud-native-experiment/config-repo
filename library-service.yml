@@ -6,6 +6,9 @@ zuul:
     catalog-service:
       path: /catalogservice/**
       service-id: catalog-service
+    user:
+      path: /user/**
+      url: http://localhost:9999/uaa/user
   host:
       socket-timeout-millis: 300000
 
@@ -14,14 +17,12 @@ security:
     password: password
   oauth2:
     client:
-      access-token-uri: http://auth-service/uaa/oauth/token
-      user-authorization-uri: http://auth-service/uaa/oauth/authorize
+      access-token-uri: http://localhost:9999/uaa/oauth/token
       client-id: acme
       client-secret: acmesecret
+      user-authorization-uri: http://localhost:9999/uaa/oauth/authorize
     resource:
-      load-balanced: true
-      user-info-uri: http://auth-service/uaa/user
-      prefer-token-info: false
+      user-info-uri: http://localhost:9999/uaa/user
 
 feign:
   hystrix:
