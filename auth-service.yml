@@ -3,12 +3,5 @@ server:
   context-path: /uaa
 
 security:
-  oauth2:
-    client:
-      client-id: acme
-      client-secret: acmesecret
-      authorized-grant-types: authorization_code,refresh_token,password
-      scope: openid
-      auto-approve-scopes: openid
   user:
     password: password

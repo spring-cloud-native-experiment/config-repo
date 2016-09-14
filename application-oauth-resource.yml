@@ -1,6 +1,14 @@
 security:
   oauth2:
     resource:
-      load-balanced: true
-      user-info-uri: http://auth-service/uaa/user
-      prefer-token-info: false
+      jwt:
+        key-value: |
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnYcXOMnJrumvONb+eJs3
+          GDuw29LcXaHdr417TC8GgSJC0r/pOgbXjQk23h2bsZqRm5hW9d9lk1Lg3rqeCE/6
+          bX1PR/Dym9R/J0sdQFufDFnY3EJEXAv/qXFLUn3RoaslEFE2e963N60L5uCPc6L+
+          fEI4q4VOBqzqZ4qr8ucBTbnEc9e8eQrg0dQxySa9Ul03BKM5jBWj5dyALfacyvmb
+          zE/BAzoLKmLrRyrc2czfSldhwT4d11HGP61xBo6J0cxYNIYh4d6B5P8sbAuKqv1d
+          DvqtZrmxsEet2UUeMm6LtIJhhUyVM1935QHHX+da0xjLq06fvFhVBB4IjWKdlO0i
+          zwIDAQAB
+          -----END PUBLIC KEY-----
